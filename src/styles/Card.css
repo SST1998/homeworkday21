@@ -1,0 +1,242 @@
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Theme */
+.bg-container {
+    padding: 0 1rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-sky {
+    background-color: #f0f0f0;
+    background-image: url('/public/img/bg-sky.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-dark {
+    background-color: #f0f0f0;
+    background-image: url('/public/img/bg-dark.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Card */
+.card-container {
+    width: 100%;
+    max-width: calc(50rem - 100px);
+    border-radius: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: ease-out 0.5s;
+    padding: 1rem;
+}
+
+.card-dark {
+    background-color: #32174d;
+    transition: ease-out 0.5s;
+}
+
+.card-head {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.card-body-text {
+    font-size: 3em;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-dark {
+    color: #fff;
+}
+
+.card-body-input-group {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: calc(22rem - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-body-input-group input {
+    width: 100%;
+    max-width: calc(15rem - 5px);
+    height: 3rem;
+    font-size: 1.2em;
+    padding: 0.5rem;
+    background-color: unset;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+.input-dark {
+  color: #fff;
+  border-bottom-color: #fff;
+  background-color: unset;
+}
+
+.result-text {
+  width: 100%;
+  text-align: center;
+  margin: 0 0.2em;
+  background-color: #ccc;
+  border-radius: 0.2em;
+}
+
+.result-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.card-body-input-group input:focus {
+    outline: none;
+}
+
+
+.card-body-input-group p {
+    font-size: 1.5em;
+}
+
+/* Footer */
+.card-footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.btn {
+  width: 100%;
+  max-width: calc(10em - 10px);
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 100em;
+  cursor: pointer;
+}
+
+.btn-sky {
+  background-color: skyblue;
+  border: 1px solid skyblue;
+}
+
+.btn-sky:hover {
+  color: #fff;
+}
+
+.btn-sky:focus {
+  border-color: aqua;
+  background-color: darkcyan;
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: darkorchid;
+  border: 1px solid darkorchid;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  background-color: darkmagenta;
+}
+
+.btn-dark:focus {
+  border-color: darkorchid;
+  background-color: darkmagenta;
+  color: #fff;
+}
+/* Check box */
+.switch-theme input {
+    display: none;
+}
+
+.switch-theme .toggle {
+    width: 6em;
+    height: 2.6em;
+    background-color: skyblue;
+    position: relative;
+    border-radius: 100em;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.switch-theme .star {
+    width: 1.5em;
+    height: 2em;
+    background-image: url('/public/img/stars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0.8em;
+    top: 0.5em;
+}
+
+.switch-theme .cloud {
+    width: 1.5em;
+    height: 2em;
+    background-image: url('/public/img/cloud-computing.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 3.8em;
+    top: 0.5em;
+}
+
+.switch-theme input:checked ~ .toggle {
+    background-color: #333;
+}
+
+.switch-theme .toggle > div { 
+    position: absolute;
+    transition: all 0.3s;
+}
+
+.switch-theme .circle {
+    width: 2em;
+    height: 2em;
+    /* background-color: #fff; */
+    background-image: url('/public/img/sunny.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    top: 0.3em;
+    left: 0.3em;
+}
+
+.switch-theme input:checked ~ .toggle .circle{
+    left: 3.7em;
+    background-color: #333;
+    background-image: url('/public/img/crescent-moon.png');
+}
